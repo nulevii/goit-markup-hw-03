@@ -23,7 +23,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   background-color: var(--color-smoke-white);
 }
@@ -32,20 +31,26 @@ body {
 .page-main,
 .page-footer {
   display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1600px;
-
+  width: 1600px;
+  margin: 0 auto;
   background-color: var(--color-white);
 }
 
 .container {
+  box-sizing: border-box;
   width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-ul {
+ul,
+h1,
+h2,
+h3,
+p {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 /* Header */
@@ -91,11 +96,12 @@ ul {
 .navigation-list {
   display: flex;
   margin-left: 93px;
+  gap: 50px;
 }
 
 .navigation-list-element {
   display: block;
-  margin-right: 50px;
+  padding: 32px 0;
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
@@ -115,12 +121,15 @@ ul {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  gap: 50px;
 }
 
 .header-contact-element {
   display: block;
 
   height: 16px;
+  padding: 32px 0;
+
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
@@ -142,7 +151,6 @@ ul {
 
 .order-section {
   height: 600px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +161,7 @@ ul {
 .order-section-sign {
   width: 696px;
   height: 120px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
 
   font-weight: 900;
@@ -187,7 +195,8 @@ ul {
   cursor: pointer;
 }
 .features-section {
-  height: 286px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +208,7 @@ ul {
   justify-content: space-between;
 
   width: 100%;
-  max-width: 1170px;
+  gap: 30px;
 }
 
 .fiture-element {
@@ -212,10 +221,9 @@ ul {
 }
 
 .fiture-text {
-  padding-top: 10px;
-
   line-height: 1.714;
-
+  margin: 0;
+  margin-top: 10px;
   color: var(--color-grey);
 }
 
@@ -223,8 +231,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 480px;
+  padding-bottom: 94px;
 }
 
 .about-us-sign,
@@ -237,13 +244,13 @@ ul {
 .about-us-list {
   display: flex;
   justify-content: space-between;
-
+  height: 100%;
   width: 100%;
-  max-width: 1170px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .about-us-image {
+  display: block;
 }
 
 .our-team-section {
@@ -273,9 +280,6 @@ ul {
   flex-direction: column;
   align-items: center;
 
-  width: 270px;
-  height: 368px;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -284,6 +288,7 @@ ul {
 }
 
 .our-team-person-image {
+  display: block;
 }
 
 .our-team-person-name {
@@ -291,8 +296,8 @@ ul {
   font-size: 16px;
   line-height: 1.188;
 
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   text-align: center;
 }
@@ -300,24 +305,33 @@ ul {
 .our-team-person-position {
   font-size: 16px;
   line-height: 1.188;
-
   text-align: center;
-
+  padding-bottom: 30px;
   color: var(--color-grey);
 }
 
 /* Portfolio page */
 .portfolio-main {
+  display: flex;
+  padding-bottom: 94px;
 }
 
 .filters-section {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .filters-list {
   display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .filter-button {
+  padding: 6px 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -336,27 +350,41 @@ ul {
 }
 
 .portfolio-section {
+  margin: auto;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-element {
-  border: 1px solid #eeeeee;
+  width: 370px;
+  box-sizing: border-box;
 }
 
 .portfolio-element-image {
+  display: block;
+}
+
+.portfolio-text-container {
+  border: 1px solid var(--color-border-two);
+  border-top: none;
 }
 
 .portfolio-element-name {
+  padding: 20px 24px 0 24px;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-element-type {
+  padding: 0 24px 20px 24px;
+
   font-size: 16px;
   line-height: 1.875;
 
@@ -397,9 +425,7 @@ ul {
 .footer-contact-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 231px;
-  height: 90px;
+  gap: 9px;
 }
 
 .footer-contact-element {
