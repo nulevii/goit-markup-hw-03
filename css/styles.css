@@ -17,23 +17,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  font-weight: 400;
   color: var(--color-almost-black);
-
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-
-  background-color: var(--color-smoke-white);
+  background-color: var(--color-white);
 }
 
-.page-header,
-.page-main,
-.page-footer {
-  display: flex;
-  width: 1600px;
-  margin: 0 auto;
-  background-color: var(--color-white);
+.section {
+  padding: 94px 0;
 }
 
 .container {
@@ -150,20 +139,17 @@ p {
 }
 
 .order-section {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 200px 0;
   background-color: var(--color-dark);
+  text-align: center;
 }
 
 .order-section-sign {
   width: 696px;
-  height: 120px;
+  margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
-
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -195,17 +181,10 @@ p {
   cursor: pointer;
 }
 .features-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fiture-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 
   width: 100%;
   gap: 30px;
@@ -216,6 +195,7 @@ p {
 }
 
 .fiture-sign {
+  font-size: 14px;
   line-height: 1.143;
   text-transform: uppercase;
 }
@@ -228,10 +208,7 @@ p {
 }
 
 .about-us-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .about-us-sign,
@@ -243,9 +220,7 @@ p {
 
 .about-us-list {
   display: flex;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
+  gap: 30px;
   margin-top: 50px;
 }
 
@@ -254,32 +229,19 @@ p {
 }
 
 .our-team-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 648px;
-
   background-color: var(--color-dark-white);
 }
 
 .our-team-sign {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .our-team-list {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1170px;
+  gap: 30px;
 }
 
 .our-team-element {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -312,22 +274,13 @@ p {
 
 /* Portfolio page */
 .portfolio-main {
-  display: flex;
-  padding-bottom: 94px;
-}
-
-.filters-section {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 
 .filters-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .filter-button {
@@ -369,12 +322,12 @@ p {
 }
 
 .portfolio-text-container {
+  padding: 20px 24px;
   border: 1px solid var(--color-border-two);
   border-top: none;
 }
 
 .portfolio-element-name {
-  padding: 20px 24px 0 24px;
   margin-bottom: 4px;
 
   font-size: 18px;
@@ -383,8 +336,6 @@ p {
 }
 
 .portfolio-element-type {
-  padding: 0 24px 20px 24px;
-
   font-size: 16px;
   line-height: 1.875;
 
@@ -393,12 +344,7 @@ p {
 /* Footer */
 
 .page-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 252px;
-
+  padding: 60px 0;
   background-color: var(--color-dark);
 }
 
@@ -409,7 +355,7 @@ p {
 }
 
 .footer-contacts {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .footer-adress {
